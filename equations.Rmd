@@ -3,7 +3,6 @@ title: "R Notebook"
 output: html_notebook
 ---
 
-
 ```{r}
 # convert bpm (/min) to ms
 ms = 60000 / bpm
@@ -11,9 +10,13 @@ ms
 ```
 
 ```{r}
-# convert bpm (/min) to ms
+# convert ms in bpm(/min)
 bpm = 60000 / ms
 bpm
 ```
 
-
+```{r}
+# convert gradient (mmHg) into velocity (cm/2)
+velocity = (sqrt(gradient/4))*100
+velocity
+```
